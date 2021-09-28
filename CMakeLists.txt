@@ -14,10 +14,6 @@ project(include/embedded_utils LANGUAGES C)
 set(CMAKE_C_STANDARD 11)
 
 include_directories(include)
-add_library(ring_buffer_lib STATIC include/embedded_utils/ring_buffer.h include/embedded_utils/utils.h src/ring_buffer.c)
-add_library(queue_lib STATIC include/embedded_utils/queue.h include/embedded_utils/utils.h  src/queue.c)
-target_include_directories(ring_buffer_lib PUBLIC include/embedded_utils)
-target_include_directories(queue_lib PUBLIC include/embedded_utils)
-target_link_libraries(ring_buffer_lib PUBLIC queue_lib)
 
-#add_executable(embedded_utils src/main.c src/ring_buffer.c)
+# The compiled library code is here
+add_subdirectory(src)
