@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Queue &mdash; embedded_utils  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="API" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> embedded_utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Welcome to embedded_utils’s documentation!</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Queue</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embedded_utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">API</a> &raquo;</li>
+      <li>Queue</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/embedded_utils.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="queue">
+<span id="api-queue"></span><h1>Queue<a class="headerlink" href="#queue" title="Permalink to this headline"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-typedefs">Typedefs</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv410QueuePtr_t">
+<span id="_CPPv310QueuePtr_t"></span><span id="_CPPv210QueuePtr_t"></span><span id="QueuePtr_t"></span><span class="target" id="queue_8h_1aa1349ec57c5f15d1708cffc739869a43"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv413QueueStruct_t" title="QueueStruct_t"><span class="n"><span class="pre">QueueStruct_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">QueuePtr_t</span></span></span><a class="headerlink" href="#_CPPv410QueuePtr_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv410Queue_Init10QueuePtr_t6size_t">
+<span id="_CPPv310Queue_Init10QueuePtr_t6size_t"></span><span id="_CPPv210Queue_Init10QueuePtr_t6size_t"></span><span id="Queue_Init__QueuePtr_t.s"></span><span class="target" id="queue_8h_1a64e5f721b28153ee0947c1aa8af3cd84"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Queue_Init</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv410QueuePtr_t" title="QueuePtr_t"><span class="n"><span class="pre">QueuePtr_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">Queue</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410Queue_Init10QueuePtr_t6size_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv413Queue_Enqueue10QueuePtr_t8uint32_t">
+<span id="_CPPv313Queue_Enqueue10QueuePtr_t8uint32_t"></span><span id="_CPPv213Queue_Enqueue10QueuePtr_t8uint32_t"></span><span id="Queue_Enqueue__QueuePtr_t.uint32_t"></span><span class="target" id="queue_8h_1a336c84ada705759bd65e31706047a570"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Queue_Enqueue</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv410QueuePtr_t" title="QueuePtr_t"><span class="n"><span class="pre">QueuePtr_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">Queue</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">data</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413Queue_Enqueue10QueuePtr_t8uint32_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv414Queue_Dequeque10QueuePtr_tP8uint32_t">
+<span id="_CPPv314Queue_Dequeque10QueuePtr_tP8uint32_t"></span><span id="_CPPv214Queue_Dequeque10QueuePtr_tP8uint32_t"></span><span id="Queue_Dequeque__QueuePtr_t.uint32_tP"></span><span class="target" id="queue_8h_1a42c0524a4b00581955293a18b0a6aecd"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Queue_Dequeque</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv410QueuePtr_t" title="QueuePtr_t"><span class="n"><span class="pre">QueuePtr_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">Queue</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">data</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414Queue_Dequeque10QueuePtr_tP8uint32_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv410Queue_Full10QueuePtr_t">
+<span id="_CPPv310Queue_Full10QueuePtr_t"></span><span id="_CPPv210Queue_Full10QueuePtr_t"></span><span id="Queue_Full__QueuePtr_t"></span><span class="target" id="queue_8h_1af4666505ce1cfeb3da450f041618c73f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Queue_Full</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv410QueuePtr_t" title="QueuePtr_t"><span class="n"><span class="pre">QueuePtr_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">Queue</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410Queue_Full10QueuePtr_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv411Queue_Empty10QueuePtr_t">
+<span id="_CPPv311Queue_Empty10QueuePtr_t"></span><span id="_CPPv211Queue_Empty10QueuePtr_t"></span><span id="Queue_Empty__QueuePtr_t"></span><span class="target" id="queue_8h_1a65d4102d8f925c65e52423d427245afc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Queue_Empty</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv410QueuePtr_t" title="QueuePtr_t"><span class="n"><span class="pre">QueuePtr_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">Queue</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411Queue_Empty10QueuePtr_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv413Queue_Destroy10QueuePtr_t">
+<span id="_CPPv313Queue_Destroy10QueuePtr_t"></span><span id="_CPPv213Queue_Destroy10QueuePtr_t"></span><span id="Queue_Destroy__QueuePtr_t"></span><span class="target" id="queue_8h_1af14b26886aa36be7340f05ecbd548e4d"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Queue_Destroy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv410QueuePtr_t" title="QueuePtr_t"><span class="n"><span class="pre">QueuePtr_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">Queue</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413Queue_Destroy10QueuePtr_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv413QueueStruct_t">
+<span id="_CPPv313QueueStruct_t"></span><span id="_CPPv213QueueStruct_t"></span><span id="QueueStruct_t"></span><span class="target" id="structQueueStruct__t"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">QueueStruct_t</span></span></span><a class="headerlink" href="#_CPPv413QueueStruct_t" title="Permalink to this definition"></a><br /></dt>
+<dd><em>#include &lt;queue.h&gt;</em><p><a class="reference internal" href="#structQueueStruct__t"><span class="std std-ref">QueueStruct_t</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N13QueueStruct_t4headE">
+<span id="_CPPv3N13QueueStruct_t4headE"></span><span id="_CPPv2N13QueueStruct_t4headE"></span><span id="QueueStruct_t::head__uint32_t"></span><span class="target" id="structQueueStruct__t_1aa0a80106968b7335d37637081f3b2b5e"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">head</span></span></span><a class="headerlink" href="#_CPPv4N13QueueStruct_t4headE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N13QueueStruct_t4tailE">
+<span id="_CPPv3N13QueueStruct_t4tailE"></span><span id="_CPPv2N13QueueStruct_t4tailE"></span><span id="QueueStruct_t::tail__uint32_t"></span><span class="target" id="structQueueStruct__t_1a49da1eccfeae855d9c07d32d9479edff"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tail</span></span></span><a class="headerlink" href="#_CPPv4N13QueueStruct_t4tailE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N13QueueStruct_t11num_entriesE">
+<span id="_CPPv3N13QueueStruct_t11num_entriesE"></span><span id="_CPPv2N13QueueStruct_t11num_entriesE"></span><span id="QueueStruct_t::num_entries__uint32_t"></span><span class="target" id="structQueueStruct__t_1a5882d188f7dd12f57424e8e0ac3d373c"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">num_entries</span></span></span><a class="headerlink" href="#_CPPv4N13QueueStruct_t11num_entriesE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N13QueueStruct_t4sizeE">
+<span id="_CPPv3N13QueueStruct_t4sizeE"></span><span id="_CPPv2N13QueueStruct_t4sizeE"></span><span id="QueueStruct_t::size__s"></span><span class="target" id="structQueueStruct__t_1a254c755e02cd8f84cd100711773c2181"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">size</span></span></span><a class="headerlink" href="#_CPPv4N13QueueStruct_t4sizeE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Harshil Bhatt.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
