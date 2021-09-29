@@ -17,3 +17,10 @@ include_directories(include)
 
 # The compiled library code is here
 add_subdirectory(src)
+
+option(PACKAGE_TESTS    "Build the tests" ON)
+if (PACKAGE_TESTS)
+    enable_testing()
+    include(GoogleTest)
+    add_subdirectory(tests)
+endif ()
