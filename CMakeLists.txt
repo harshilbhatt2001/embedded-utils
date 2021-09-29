@@ -10,8 +10,9 @@ set(SIZE arm-none-eabi-size)
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
 # project settings
-project(include/embedded_utils LANGUAGES C)
+project(embedded_utils LANGUAGES C)
 set(CMAKE_C_STANDARD 11)
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 
 include_directories(include)
 
@@ -24,3 +25,6 @@ if (PACKAGE_TESTS)
     include(GoogleTest)
     add_subdirectory(tests)
 endif ()
+
+# docs
+add_subdirectory(docs)
