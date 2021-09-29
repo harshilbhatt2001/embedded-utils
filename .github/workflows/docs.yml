@@ -12,22 +12,24 @@ on:
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Requirements
-        run: brew install doxygen
-          && brew install sphinx-doc
-          && pip3 install sphinx-rtd-theme
-          && pip3 install breathe
-          && pip3 install sphinx-sitemap
+        run: apt install doxygen
+          && apt install python3-sphinx
+          && pip install sphinx-rtd-theme
+          && pip install breathe
+          && pip install sphinx-sitemap
       - name: Checkout repo
         uses: actions/checkout@1.0.0
       - name: Build docs
-        run: cd docs_sphinx
-          && make html
-          && cd _build/html
-          && touch .nojekyll
+        run: mkdir build
+          && cd build
+          && cmake ..
+          && make Doxygen
+          && make Sphinx
+          && touch docs/sphinx/.nojekyll
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:

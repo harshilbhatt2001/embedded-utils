@@ -1,5 +1,5 @@
 .. embedded_utils documentation master file, created by
-   sphinx-quickstart on Wed Sep 29 18:08:28 2021.
+   sphinx-quickstart on Wed Sep 29 23:49:21 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -21,9 +21,9 @@ Indices and tables
 
 Table of Contents
 ^^^^^^^^^^^^^^^^^
+
 .. toctree::
-    :maxdepth: 2
+   :maxdepth: 2
 
-    self
-
-    api/index
+   self
+   api/index

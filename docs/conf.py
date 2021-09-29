@@ -13,12 +13,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-from sphinx.builders.html import StandaloneHTMLBuilder
-import subprocess
-import os
 
-# Doxygen
-subprocess.call('doxygen Doxyfile.in', shell=True)
 
 # -- Project information -----------------------------------------------------
 
@@ -54,7 +49,7 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-highlight_language = 'c'
+highlight_language = 'c++'
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -88,9 +83,4 @@ html_theme_options = {
 html_static_path = ['_static']
 
 # -- Breathe configuration -------------------------------------------------
-
-breathe_projects = {
-	"embedded_utils": "_build/xml/"
-}
 breathe_default_project = "embedded_utils"
-breathe_default_members = ('members', 'undoc-members')

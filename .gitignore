@@ -58,4 +58,4 @@ dkms.conf
 _build/
 _static/
 _templates/
-@DOXYGEN_OUTPUT_DIR@
+docs/doxygen
