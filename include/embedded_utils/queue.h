@@ -13,6 +13,7 @@
 
 typedef struct QueueStruct_t *QueuePtr_t;
 
+/// QueueStruct_t
 struct QueueStruct_t {
 #ifdef BUFFER_SIZE
     uint32_t buffer[BUFFER_SIZE];

@@ -3,7 +3,8 @@ file(GLOB_RECURSE SOURCES_LIST LIST_DIRECTORIES true *.c)
 set(SOURCES_LIST ${SOURCES_LIST})
 
 # Make automatic library - will be static or dynamic based on user setting
-add_library(embedded_utils_lib ${SOURCES_LIST} ${HEADER_LIST})
+#add_library(embedded_utils_lib ${SOURCES_LIST} ${HEADER_LIST})
+add_library(embedded_utils_lib queue.c ${HEADER_LIST})
 
 # We need this directory, and users of our library will need it to
 target_include_directories(embedded_utils_lib PUBLIC ../include)

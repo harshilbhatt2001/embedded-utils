@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <assert.h>
 
+/// Queue_Init
 bool Queue_Init(QueuePtr_t Queue, size_t size)
 {
     Queue = malloc(sizeof(struct QueueStruct_t));
@@ -20,6 +21,7 @@ bool Queue_Init(QueuePtr_t Queue, size_t size)
     return true;
 }
 
+// Queue_Enqueue
 bool Queue_Enqueue(QueuePtr_t Queue, uint32_t data)
 {
     assert(Queue);
@@ -34,6 +36,7 @@ bool Queue_Enqueue(QueuePtr_t Queue, uint32_t data)
     return true;
 }
 
+/// Queue_Dequeque
 bool Queue_Dequeque(QueuePtr_t Queue, uint32_t *data)
 {
     assert(Queue);
@@ -48,18 +51,21 @@ bool Queue_Dequeque(QueuePtr_t Queue, uint32_t *data)
     return true;
 }
 
+/// Queue_Full
 bool Queue_Full(QueuePtr_t Queue)
 {
     assert(Queue);
     return Queue->num_entries == Queue->size;
 }
 
+/// Queue_Empty
 bool Queue_Empty(QueuePtr_t Queue)
 {
     assert(Queue);
     return Queue->num_entries == 0;
 }
 
+/// Queue_Destroy
 bool Queue_Destroy(QueuePtr_t Queue)
 {
     assert(Queue);
